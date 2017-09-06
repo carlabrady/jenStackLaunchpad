@@ -18,3 +18,7 @@ app.get( '/', function( req, res ){
   res.sendFile( path.resolve( 'views/index.html' ) );
 }); // end base url
 
+app.get('/glasses', function(req, res){
+  console.log('get glasses');
+  res.send('glasses are cooooool!');
+})
